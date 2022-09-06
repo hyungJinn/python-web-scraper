@@ -16,3 +16,6 @@ Beautiful Soup is a Python library for pulling data out of HTML and XML files.
 
 ## Selenium
 Selenium automates browsers.
+
+## #5.12 Indeed 403 Fix
+"https://www.indeed.com" website block the request. I used the selenium.

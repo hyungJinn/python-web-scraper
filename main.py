@@ -1,14 +1,13 @@
 from requests import get
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
 
-base_url = "https://kr.indeed.com/jobs?q="
-search_term = "python"
+options = Options()
+options.add_argument("--no-sandbox")
+options.add_argument("--disable-dev-shm-usage")
 
-response = get(f"https://www.indeed.com/jobs?q=python&limit=50")
+browser = webdriver.Chrome(options=options)
 
-print(response.status_code)
-print(response.text)
+browser.get("https://www.indeed.com/jobs?q=python&limit=50")
 
-# if response.status_code != 200:
-#     print("Cant request page")
-# else:
-#     print(response.text)
+print(browser.page_source)
