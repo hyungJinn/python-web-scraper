@@ -18,4 +18,8 @@ Beautiful Soup is a Python library for pulling data out of HTML and XML files.
 Selenium automates browsers.
 
 ## #5.12 Indeed 403 Fix
-"https://www.indeed.com" website block the request. I used the selenium.
+"https://www.indeed.com" website block the request. I used the selenium. They are checking now if you are a AI or not. We are going to start a browser. That website is goin to think that we are a browser and not a bot. 
+
+## False vs None
+  - False: something isn't true
+  - None: the absent something
